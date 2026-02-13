@@ -1,52 +1,119 @@
-# ML_Project on 🩺 Diabetes Data Prediction 
-Developed a machine learning model to predict whether an patient has diabetes based on medical features such as Pregnancies,glucose level, BMI, blood pressure,age, and insulin levels. Used classification algorithms on the Diabetes dataset to build and evaluate the model.
+# 🩺 Diabetes Data Prediction 
 
+An interactive Machine Learning web application that predicts whether a patient is at risk of diabetes based on key medical indicators.
 
-Description:
-This project predicts whether a patient is **likely to have diabetes** based on health-related features from the **Pima Indians Diabetes dataset** using a Logistic Regression model.
+Built using Streamlit + Support Vector Machine (SVM) and deployed as a real-time prediction app.
 
+---
 
+## 🚀 Live Application
 
+👉 Direct View / Try the App:
+https://mlprojectondiabetesdataprediction-ebyltuumub2hzsp497y5n2.streamlit.app/
+
+---
 ## 📌 Project Overview
-Diabetes is a chronic disease that can lead to serious health complications if not diagnosed early.  
-Early prediction can help in prevention and treatment planning.  
 
-In this project, we:
-- Load and preprocess the dataset
-- Train a *Logistic Regression* model
-- Evaluate its performance using metrics like accuracy, precision, recall, and F1-score
-- Create a prediction pipeline for new patient data
+Diabetes is a chronic condition that can lead to serious complications if not detected early.
 
+This project provides a real-time clinical-style risk prediction system where users can input patient medical data and instantly receive:
+
+- Risk classification (Diabetic / Non-Diabetic)
+
+- Probability score
+
+- Model confidence level
+
+- Clean, professional medical-themed UI
+
+---
+
+## 🧠 Model Details
+
+- Algorithm Used: Support Vector Machine (SVM – Linear Kernel)
+
+- Feature Scaling: StandardScaler
+
+- Train/Test Split: 80% / 20% (Stratified)
+
+- Probability Estimation Enabled
+  
 ---
 
 ## 📂 Dataset
-- **Source:** [Pima Indians Diabetes Dataset - Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)  
-- **Instances:** 768 samples  
-- **Features:** 8 health-related measurements (e.g., glucose level, BMI, age)  
-- **Target:**  
-  - 0 → No Diabetes  
-  - 1 → Diabetes  
 
----
+- Source: Diabetes Patients Data
 
-## 🛠️ Technologies Used
-- *Python 3.x*
-- *Pandas* – data manipulation  
-- *NumPy* – numerical computations  
-- *Matplotlib / Seaborn* – data visualization  
-- *Scikit-learn* – model building and evaluation  
+- Samples: 768 patients
+
+- Features: 8 medical attributes
+
+  - Input Features:
+
+  - Pregnancies
+
+  - Glucose Level
+
+  - Blood Pressure
+
+  - Skin Thickness
+
+  - Insulin
+
+  - BMI
+
+  - Diabetes Pedigree Function
+
+- Age
+
+- Target:
+
+   - 0 → Non-Diabetic
+
+   - 1 → Diabetic
 
 ---
 
 ## 📊 Model Performance
-| Metric      | Score |
-|-------------|-------|
-| Accuracy    | 77%   |
-| Precision   | 74%   |
-| Recall      | 69%   |
-| F1-Score    | 71%   |
+- Metric	Score (Approx.)
+- 
+- Training Accuracy	~80–85%
+  
+- Test Accuracy	~75–80%
 
-> The model provides decent accuracy and recall, making it useful as a preliminary screening tool.
+Accuracy may slightly vary depending on random state and deployment environment.
+
+---
+
+## 🖥️ Application Features
+
+✔ Interactive patient input panel
+
+✔ Real-time probability prediction
+
+✔ Clinical-style UI (Dark Medical Theme)
+
+✔ Risk visualization bar
+
+✔ Model accuracy indicators
+
+✔ Responsive layout
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3.x
+
+- Streamlit – Web application framework
+
+- NumPy – Numerical computations
+
+- Pandas – Data manipulation
+
+- Scikit-learn – Machine Learning model
+
+- Custom CSS – Premium medical UI styling
 
 
 ## 📈 Visualization
@@ -57,6 +124,5 @@ In this project, we:
 ---
 
 ## 🔮 Future Improvements
-- Deploy as a **Streamlit web app** for real-time predictions  
 - Try advanced models like **Random Forest** or **XGBoost**  
  
